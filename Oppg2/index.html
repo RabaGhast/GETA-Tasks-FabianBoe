@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>A Web Page</title>
+    <meta content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h1>Holiday Search</h1>
+        <p>Search for any country's holiday using country code (e.g. 'NO')</p>
+        <small>Notice: Service is sometimes slow.</small>
+    </header>
+
+    <main>
+        <section>
+            <form id="searchForm">
+                <input type="text" placeholder="Search..." name="search" id="searchInput">
+                <input class="submit" type="submit" value="Search" />
+            </form>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Local Name</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+                <h2 id="Error"></h2>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
